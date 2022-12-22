@@ -1,0 +1,268 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Hallo Coursera</title>
+</head>
+<body>
+<h1 id="top">Test </h1>
+<ul>
+    <li><a href="#section1">Sektion 1</a></li>
+    <li><a href="#section2">Sektion 2</a></li>
+    <li><a href="#section3">Sektion 3</a></li>
+    <li><a href="#section4">Sektion 4</a></li>
+</ul>
+<section id="section1">
+    <h3>(#section1) Section 1</h3>
+
+Links pretty much what makes the web what it is.
+In this lecture, we're going to take a look at different types of links and
+how you could create them in your HTML page.
+So the first type of links that we're going to take a look at
+are internal links.
+Here I am looking at the file called links-internal.html,
+and it's located in the examples/Lecture09 folder.
+And here we have a couple of links we're going to take a look at.
+Now the way you create links is by specifying an a element
+with an attribute href.
+And href stands for hypertext reference.
+The value of href can either be a relative or an absolute URL.
+In our case here, since we're discussing internal links
+which are links that point to internal web pages of the where application,
+the links we're showing are all relative URL links.
+However we could still have an even absolute URL links as long as they point,
+again, to the same web application that we're in.
+Since we're providing no directory information,
+the browser will assume that same-directory.html is a file that lives
+in the same directory as links-internal.html.
+It's also a very good idea to always specify a title attribute for the a tag.
+The title attribute is used by the screen readers
+that help the visually impaired people get through the web page.
+The content in between the opening and closing a tags is the content
+you're going to see in the web page, when it is served and on which you're going to
+be able to click to go to the href that the a tag is configured with.
+Note the second example of our a tag.
+In this example, we're surrounding a div tag with our anchor tag.
+In other words, this div tag is going to be
+the content over our link on which were going to be able to click.
+Let's go ahead and see what this look like in the browser? Directions
+
+The HERE SDK provides a full-fledged route engine to calculate the best route directions from A to B, including multiple waypoints and localizable maneuver instructions for each turn. You can also specify your preferences by setting the desired route type (fastest or shortest) and various route options (such as speed profiles, route restrictions, vignette options, and more).
+
+Additional features:
+
+    Isoline routing: Calculate isoline polygons to represent the area of reach from a given point based on time, distance or fuel consumption.
+    Search along a route: Search for places along an entire route using the SearchEngine.
+    Offline routing: When no internet connection is available, you can switch to a dedicated offline routing engine to calculate car routes on already cached map data or preloaded offline maps data.
+
+Get Routes
+
+The HERE SDK supports the following route types:
+
+    Online car route directions.
+    Online pedestrian route directions.
+    Online truck route directions with highly customizable truck options.
+    Online routes for electric vehicles to find the nearest charging stations (based on the calculated energy consumption and given battery specifications).
+    Online scooter route directions.
+
+Each route type is determined by one of the available route options: CarOptions, PedestrianOptions, TruckOptions, ScooterOptions, EVCarOptions and EVTruckOptions. These options can be set to the available overloads of the route engine's calculateRoute() method.
+
+A usage example is available on GitHub as part of the routing example app. More code snippets and examples will follow soon.
+Offline Routing
+
+In addition to the RoutingEngine, there is also an equivalent for offline use cases available: The OfflineRoutingEngine. It can be constructed in the same way as its online counterpart.
+Get Routes for Electric Vehicles
+
+Electric vehicle (EV) usage and sales continue growing around the world. How can HERE help to provide the best routes for electric vehicles?
+
+    HERE EV Routing delivers optimized routes for EVs to get from A to B, minimizing the number of charging stops and optimizing battery charge times (based on the vehicle’s consumption model). It also takes into account a number of factors when planning trips, including topography, road geometry, real-time traffic information and traffic patterns.
+
+    Instead of searching for charging stations along the route, HERE analyzes the charging time at every possible station and chooses the most appropriate combination that will deliver the shortest driving and charging times.
+
+Getting EV routes is simple. Similar to getting car or truck routes, for EV routing you just need to add electric vehicle specific route options. This way you can get routes for electric vehicles in the same way as for other transport modes. Just specify EVRouteOptions and add them to the calculateRoute() method.
+</section>
+<section id="section2">
+    <h3>(#section2) Section 2</h3>
+
+    Okay. So, here is our internal links page, and
+we have a couple of links.
+One it says linking to a file in the same directory, and the one is the DIV.
+That's the a tag surrounding the div tag that says DIV linking
+to a file in the same directory.
+And if we click that, we're going to go to this same-directory.html
+page which basically just provides a link back to our original page.
+What's interesting to note here is that the first link,
+linking to a file in the same directory,
+is clearly an inline tag since it's not forcing itself to go to a new line.
+But yet in the second case, div linking to a file in the same directory,
+we're surrounding the div tag with our a tag.
+So what's going on here?
+Are we using block level element, the div, inside an inline element?
+Well, turns out things are little bit more interesting.
+Let's take a look at the a tag as defined in the W3C specification.
+If you take a look closely, the a tag is both a flow content and
+a phrasing content.
+In other words, to map it back to the HTML four days, th
+
+Links pretty much what makes the web what it is.
+In this lecture, we're going to take a look at different types of links and
+how you could create them in your HTML page.
+So the first type of links that we're going to take a look at
+are internal links.
+Here I am looking at the file called links-internal.html,
+and it's located in the examples/Lecture09 folder.
+And here we have a couple of links we're going to take a look at.
+Now the way you create links is by specifying an a element
+with an attribute href.
+And href stands for hypertext reference.
+The value of href can either be a relative or an absolute URL.
+In our case here, since we're discussing internal links
+which are links that point to internal web pages of the where application,
+the links we're showing are all relative URL links.
+However we could still have an even absolute URL links as long as they point,
+again, to the same web application that we're in.
+Since we're providing no directory information,
+the browser will assume that same-directory.html is a file that lives
+in the same directory as links-internal.html.
+It's also a very good idea to always specify a title attribute for the a tag.
+The title attribute is used by the screen readers
+that help the visually impaired people get through the web page.
+The content in between the opening and closing a tags is the content
+you're going to see in the web page, when it is served and on which you're going to
+be able to click to go to the href that the a tag is configured with.
+Note the second example of our a tag.
+In this example, we're surrounding a div tag with our anchor tag.
+In other words, this div tag is going to be
+the content over our link on which were going to be able to click.
+Let's go ahead and see what this look like in the browser? Directions
+
+The HERE SDK provides a full-fledged route engine to calculate the best route directions from A to B, including multiple waypoints and localizable maneuver instructions for each turn. You can also specify your preferences by setting the desired route type (fastest or shortest) and various route options (such as speed profiles, route restrictions, vignette options, and more).
+
+Additional features:
+
+    Isoline routing: Calculate isoline polygons to represent the area of reach from a given point based on time, distance or fuel consumption.
+    Search along a route: Search for places along an entire route using the SearchEngine.
+    Offline routing: When no internet connection is available, you can switch to a dedicated offline routing engine to calculate car routes on already cached map data or preloaded offline maps data.
+
+Get Routes
+
+The HERE SDK supports the following route types:
+
+    Online car route directions.
+    Online pedestrian route directions.
+    Online truck route directions with highly customizable truck options.
+    Online routes for electric vehicles to find the nearest charging stations (based on the calculated energy consumption and given battery specifications).
+    Online scooter route directions.
+
+Each route type is determined by one of the available route options: CarOptions, PedestrianOptions, TruckOptions, ScooterOptions, EVCarOptions and EVTruckOptions. These options can be set to the available overloads of the route engine's calculateRoute() method.
+
+A usage example is available on GitHub as part of the routing example app. More code snippets and examples will follow soon.
+Offline Routing
+
+In addition to the RoutingEngine, there is also an equivalent for offline use cases available: The OfflineRoutingEngine. It can be constructed in the same way as its online counterpart.
+Get Routes for Electric Vehicles
+
+Electric vehicle (EV) usage and sales continue growing around the world. How can HERE help to provide the best routes for electric vehicles?
+
+    HERE EV Routing delivers optimized routes for EVs to get from A to B, minimizing the number of charging stops and optimizing battery charge times (based on the vehicle’s consumption model). It also takes into account a number of factors when planning trips, including topography, road geometry, real-time traffic information and traffic patterns.
+
+    Instead of searching for charging stations along the route, HERE analyzes the charging time at every possible station and chooses the most appropriate combination that will deliver the shortest driving and charging times.
+
+Getting EV routes is simple. Similar to getting car or truck routes, for EV routing you just need to add electric vehicle specific route options. This way you can get routes for electric vehicles in the same way as for other transport modes. Just specify EVRouteOptions and add them to the calculateRoute() method.
+
+</section>
+<section id="section3">
+    <h3>(#section3) Section 3</h3>
+
+    Okay. So, here is our internal links page, and
+we have a couple of links.
+One it says linking to a file in the same directory, and the one is the DIV.
+That's the a tag surrounding the div tag that says DIV linking
+to a file in the same directory.
+And if we click that, we're going to go to this same-directory.html
+page which basically just provides a link back to our original page.
+What's interesting to note here is that the first link,
+linking to a file in the same directory,
+is clearly an inline tag since it's not forcing itself to go to a new line.
+But yet in the second case, div linking to a file in the same directory,
+we're surrounding the div tag with our a tag.
+So what's going on here?
+Are we using block level element, the div, inside an inline element?
+Well, turns out things are little bit more interesting.
+Let's take a look at the a tag as defined in the W3C specification.
+If you take a look closely, the a tag is both a flow content and
+a phrasing content.
+In other words, to map it back to the HTML four days, th
+
+Links pretty much what makes the web what it is.
+In this lecture, we're going to take a look at different types of links and
+how you could create them in your HTML page.
+So the first type of links that we're going to take a look at
+are internal links.
+Here I am looking at the file called links-internal.html,
+and it's located in the examples/Lecture09 folder.
+And here we have a couple of links we're going to take a look at.
+Now the way you create links is by specifying an a element
+with an attribute href.
+And href stands for hypertext reference.
+The value of href can either be a relative or an absolute URL.
+In our case here, since we're discussing internal links
+which are links that point to internal web pages of the where application,
+the links we're showing are all relative URL links.
+However we could still have an even absolute URL links as long as they point,
+again, to the same web application that we're in.
+Since we're providing no directory information,
+the browser will assume that same-directory.html is a file that lives
+in the same directory as links-internal.html.
+It's also a very good idea to always specify a title attribute for the a tag.
+The title attribute is used by the screen readers
+that help the visually impaired people get through the web page.
+The content in between the opening and closing a tags is the content
+you're going to see in the web page, when it is served and on which you're going to
+be able to click to go to the href that the a tag is configured with.
+Note the second example of our a tag.
+In this example, we're surrounding a div tag with our anchor tag.
+In other words, this div tag is going to be
+the content over our link on which were going to be able to click.
+Let's go ahead and see what this look like in the browser? Directions
+
+The HERE SDK provides a full-fledged route engine to calculate the best route directions from A to B, including multiple waypoints and localizable maneuver instructions for each turn. You can also specify your preferences by setting the desired route type (fastest or shortest) and various route options (such as speed profiles, route restrictions, vignette options, and more).
+
+Additional features:
+
+    Isoline routing: Calculate isoline polygons to represent the area of reach from a given point based on time, distance or fuel consumption.
+    Search along a route: Search for places along an entire route using the SearchEngine.
+    Offline routing: When no internet connection is available, you can switch to a dedicated offline routing engine to calculate car routes on already cached map data or preloaded offline maps data.
+
+Get Routes
+
+The HERE SDK supports the following route types:
+
+    Online car route directions. 
+    Online pedestrian route directions.
+    Online truck route directions with highly customizable truck options.
+    Online routes for electric vehicles to find the nearest charging stations (based on the calculated energy consumption and given battery specifications).
+    Online scooter route directions.
+
+Each route type is determined by one of the available route options: CarOptions, PedestrianOptions, TruckOptions, ScooterOptions, EVCarOptions and EVTruckOptions. These options can be set to the available overloads of the route engine's calculateRoute() method.
+
+A usage example is available on GitHub as part of the routing example app. More code snippets and examples will follow soon.
+Offline Routing
+
+In addition to the RoutingEngine, there is also an equivalent for offline use cases available: The OfflineRoutingEngine. It can be constructed in the same way as its online counterpart.
+Get Routes for Electric Vehicles
+
+Electric vehicle (EV) usage and sales continue growing around the world. How can HERE help to provide the best routes for electric vehicles?
+
+    HERE EV Routing delivers optimized routes for EVs to get from A to B, minimizing the number of charging stops and optimizing battery charge times (based on the vehicle’s consumption model). It also takes into account a number of factors when planning trips, including topography, road geometry, real-time traffic information and traffic patterns.
+
+    Instead of searching for charging stations along the route, HERE analyzes the charging time at every possible station and chooses the most appropriate combination that will deliver the shortest driving and charging times.
+
+Getting EV routes is simple. Similar to getting car or truck routes, for EV routing you just need to add electric vehicle specific route options. This way you can get routes for electric vehicles in the same way as for other transport modes. Just specify EVRouteOptions and add them to the calculateRoute() method.
+
+</section>
+
+<a href="#top">ZUrück on Top</a>
+</body>
+</html>
